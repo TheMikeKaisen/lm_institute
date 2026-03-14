@@ -197,7 +197,7 @@ export default function Syllabus() {
   }, [])
 
   return (
-    <section id="syllabus" className="py-24 lg:py-32 bg-white">
+    <section id="syllabus" className="pt-12 lg:pt-16 pb-24 lg:pb-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -212,7 +212,7 @@ export default function Syllabus() {
             <span className="text-sky-gradient">Actually Learn</span>
           </h2>
           <p className="text-sky-900/55 text-base leading-relaxed">
-            A structured curriculum built from 20+ years of real service center experience.
+            A structured curriculum built from 30+ Years Experience in real service centers.
             Every topic is practical and industry-relevant.
           </p>
         </div>

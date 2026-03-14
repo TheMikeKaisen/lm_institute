@@ -20,7 +20,7 @@ export default function Footer() {
       {/* Gold top strip */}
       <div className="bg-amber-500 py-3 px-6">
         <p className="text-center text-sky-950 font-display font-700 text-sm">
-          🎓 Batch 1 Admissions Open · LM Infotech Institute · Enroll Now
+          🎓 New Batch Admissions Open · LM Infotech Institute · Enroll Now
         </p>
       </div>
 
@@ -29,11 +29,8 @@ export default function Footer() {
         {/* Brand */}
         <div className="lg:col-span-1">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path d="M4 4h6v6H4zM12 4h6v6h-6zM4 12h6v6H4z" fill="#0c4a6e" opacity="0.9"/>
-                <rect x="14" y="14" width="4" height="4" rx="1" fill="#0c4a6e"/>
-              </svg>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden shrink-0">
+              <img src="/images/logo.jpeg" alt="LM Infotech Logo" className="w-full h-full object-cover" />
             </div>
             <div>
               <span className="block font-display font-800 text-white text-lg leading-none">
@@ -46,9 +43,9 @@ export default function Footer() {
           </div>
           <p className="text-white/55 text-sm leading-relaxed mb-6">
             A professional mobile repairing institute backed by a real working service center.
-            Learn from a master technician with 20+ years of experience.
+            Learn from a master technician with 30+ Years Experience.
           </p>
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             {['youtube', 'instagram', 'facebook', 'whatsapp'].map(s => (
               <a key={s} href="#" aria-label={s}
                  className="w-9 h-9 rounded-lg border border-white/15 flex items-center justify-center
@@ -62,7 +59,7 @@ export default function Footer() {
                 </svg>
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Courses */}

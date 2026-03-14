@@ -4,11 +4,10 @@ import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 
 const credentials = [
-  { icon: '🏆', title: '20+ Years Experience', desc: 'Two decades of hands-on mobile repair across thousands of devices' },
   { icon: '🔬', title: 'Chip-Level Expert', desc: 'Specializes in motherboard-level diagnosis and micro-soldering' },
   { icon: '📱', title: 'Multi-Brand Expertise', desc: 'iPhone, Samsung, OnePlus, Xiaomi, Oppo, Vivo and more' },
   { icon: '🎓', title: 'Certified Trainer', desc: 'Structured teaching methodology developed from real service center experience' },
-  { icon: '🛠️', title: 'Service Center Founder', desc: 'Runs LM Infotech Service Center — a professional repair lab' },
+  { icon: '🛠️', title: 'Founder - LM Infotech', desc: 'Runs Lakshmi Mobiles Service Center — a professional repair lab' },
   { icon: '💡', title: 'Industry Connected', desc: 'Up-to-date with the latest tools, techniques and repair practices' },
 ]
 
@@ -76,10 +75,9 @@ export default function Instructor() {
                 </div>
 
                 {/* Stats row */}
-                <div className="grid grid-cols-3 divide-x divide-sky-700/50">
+                <div className="grid grid-cols-2 divide-x divide-sky-700/50">
                   {[
-                    { val: '20+', lbl: 'Years' },
-                    { val: '50K+', lbl: 'Repaired' },
+                    { val: '30+', lbl: 'Years' },
                     { val: '3', lbl: 'Courses' },
                   ].map(s => (
                     <div key={s.lbl} className="py-5 text-center">
@@ -116,7 +114,7 @@ export default function Instructor() {
               <span className="text-sky-400">True Expert</span>
             </h2>
             <p className="text-white/60 text-base leading-relaxed mb-10">
-              H Kumar has spent over two decades in mobile repair — from basic screen swaps
+              H Kumar has spent over three decades in mobile repair — from basic screen swaps
               to complex chip-level motherboard surgery. He doesn't just teach theory;
               everything you learn comes from <span className="text-white/90 font-600">real workshop experience.</span>
             </p>

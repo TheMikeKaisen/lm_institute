@@ -67,7 +67,7 @@ export default function Contact() {
               </span>
             </div>
             <h2 className="font-display text-white text-4xl lg:text-5xl font-800 mb-6 leading-tight">
-              Join Batch 1<br/>
+              Join Our New Batch<br/>
               <span className="text-sky-400">Before It Fills Up</span>
             </h2>
             <p className="text-white/60 text-base leading-relaxed mb-10">
@@ -128,7 +128,7 @@ export default function Contact() {
             <div className="bg-amber-500/15 border border-amber-500/25 rounded-2xl p-6">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-2xl">🎓</span>
-                <p className="font-display font-700 text-white text-lg">Batch 1 — Limited Seats</p>
+                <p className="font-display font-700 text-white text-lg">New Batch — Limited Seats</p>
               </div>
               <p className="text-white/60 text-sm leading-relaxed">
                 We're keeping this batch small intentionally — so every student gets

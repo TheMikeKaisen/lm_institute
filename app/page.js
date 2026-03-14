@@ -8,9 +8,9 @@ import Gallery    from '@/components/Gallery'
 import Contact    from '@/components/Contact'
 
 export const metadata = {
-  title: 'LM Infotech Institute | Mobile Repairing Courses — Batch 1',
+  title: 'LM Infotech Institute | Mobile Repairing Courses — New Batch',
   description:
-    'Join Batch 1 of LM Infotech Institute. Learn mobile repairing from H Kumar with 20+ years experience. 1-Month, 3-Month and 6-Month courses covering chip-level repair, micro-soldering, diagnostics and more.',
+    'Join the New Batch of LM Infotech Institute. Learn mobile repairing from H Kumar with 30+ Years Experience. 1-Month, 3-Month and 6-Month courses covering chip-level repair, micro-soldering, diagnostics and more.',
 }
 
 export default function HomePage() {

@@ -4,11 +4,11 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: {
-    default: 'LM Infotech Institute | Mobile Repairing Course — Batch 1',
+    default: 'LM Infotech Institute | Mobile Repairing Course — New Batch',
     template: '%s | LM Infotech Institute',
   },
   description:
-    'Learn mobile repairing from H Kumar — 20+ years of experience. 1-Month, 3-Month and 6-Month courses covering chip-level repair, soldering, diagnostics and more. Enroll now for Batch 1.',
+    'Learn mobile repairing from H Kumar — 30+ Years Experience. 1-Month, 3-Month and 6-Month courses covering chip-level repair, soldering, diagnostics and more. Enroll now for the New Batch.',
   keywords: [
     'mobile repairing course', 'chip level repair training', 'phone repair institute',
     'H Kumar mobile course', 'LM Infotech institute', '6 month mobile course',
@@ -23,7 +23,7 @@ export const metadata = {
     url:      'https://institute.lminfotech.in',
     siteName: 'LM Infotech Institute',
     title:    'LM Infotech Institute | Mobile Repairing Courses',
-    description: 'Professional mobile repairing courses by H Kumar with 20+ years experience.',
+    description: 'Professional mobile repairing courses by H Kumar with 30+ Years Experience.',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'LM Infotech Institute' }],
   },
   robots: { index: true, follow: true },

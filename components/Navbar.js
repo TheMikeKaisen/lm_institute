@@ -46,12 +46,9 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group" aria-label="LM Infotech Institute">
-          <div className="w-10 h-10 bg-sky-700 rounded-xl flex items-center justify-center
-                          group-hover:bg-sky-600 transition-colors duration-200 shadow-[0_4px_14px_rgba(3,105,161,0.30)]">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-              <path d="M4 4h6v6H4zM12 4h6v6h-6zM4 12h6v6H4z" fill="white" opacity="0.9"/>
-              <rect x="14" y="14" width="4" height="4" rx="1" fill="#fbbf24"/>
-            </svg>
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center
+                          group-hover:opacity-90 transition-opacity duration-200 shadow-[0_4px_14px_rgba(3,105,161,0.30)] overflow-hidden shrink-0">
+            <img src="/images/logo.jpeg" alt="LM Infotech Logo" className="w-full h-full object-cover" />
           </div>
           <div className="leading-tight">
             <span className="block font-display font-800 text-sky-900 text-[17px] tracking-tight leading-none">

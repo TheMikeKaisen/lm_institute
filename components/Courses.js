@@ -14,18 +14,16 @@ const courses = [
     badgeColor: 'bg-sky-100 text-sky-700',
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="5" y="2" width="14" height="20" rx="2"/>
-        <line x1="12" y1="18" x2="12.01" y2="18" strokeWidth="2"/>
+        <rect x="5" y="2" width="14" height="20" rx="2" />
+        <line x1="12" y1="18" x2="12.01" y2="18" strokeWidth="2" />
       </svg>
     ),
     highlights: [
       'Safe phone opening techniques',
-      'Tools: screwdrivers, pry tools, heat gun',
-      'Display, battery & port replacement',
-      'Camera, speaker, mic & vibrator repair',
-      'SIM network contact cleaning',
-      'Hardware vs software identification',
-      'Practical: Samsung, Xiaomi, Vivo, Oppo, iPhone',
+      'Tools: screwdrivers, pry tools, hot air gun',
+      'Display, battery, Camera, speaker, mic, vibrator & charging port replacement',
+      'Hardware vs software fault identification',
+      'Practical: iPhone, Samsung, Xiaomi, Vivo, Oppo, etc...',
     ],
   },
   {
@@ -40,19 +38,20 @@ const courses = [
     featured: true,
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        <path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
       </svg>
     ),
     highlights: [
-      'Resistors, capacitors, diodes & transistors',
+      'IC, Resistors, capacitors, diodes & transistors',
       'Reading component values on real boards',
-      'Short circuit theory & PCB continuity',
+      'Short circuit theory & PCB continuity checking',
       'Using multimeter & DC power supply',
       'Voltage drop analysis',
       'Basic schematic understanding',
       'Dead phone & no-power diagnostics',
-      'Charging IC & battery connector repair',
-      'Android flashing with SP Flash Tool',
+      'Android flashing with advance flashing tools',
+      'Identify charging fault',
+      'Motherboard fault finding'
     ],
   },
   {
@@ -66,19 +65,20 @@ const courses = [
     badgeColor: 'bg-sky-900 text-sky-200',
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+        <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
       </svg>
     ),
     highlights: [
       'PCB layer signal tracing & short killing',
       'Hot air & soldering station mastery',
       'IC removal, reballing & replacement',
-      'Charging IC, audio IC & backlight IC',
       'Advanced flashing & baseband repair',
       'EFS backup, restore & bootloader basics',
       'FRP & pattern lock removal (legal methods)',
       'Camera, network & sensor diagnostics',
       'iPhone basics: battery, display, audio',
+      'Secure data transfer (Whatsapp & App Data)',
+      'Motherboard fault finding through DC power supply & digital dock'
     ],
   },
 ]
@@ -96,7 +96,7 @@ export default function Courses() {
   }, [])
 
   return (
-    <section id="courses" className="py-24 lg:py-32 bg-sky-50/50">
+    <section id="courses" className="pt-24 lg:pt-32 pb-12 lg:pb-16 bg-sky-50/50">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -107,7 +107,7 @@ export default function Courses() {
             </span>
           </div>
           <h2 className="font-display text-sky-950 text-4xl lg:text-5xl font-800 mb-4 leading-tight">
-            Three Levels of<br/>
+            Three Levels of<br />
             <span className="text-sky-gradient">Mastery</span>
           </h2>
           <p className="text-sky-900/55 text-lg leading-relaxed">
@@ -161,8 +161,8 @@ export default function Courses() {
                   {c.highlights.map(h => (
                     <li key={h} className="flex items-start gap-2.5 text-sky-900/70 text-sm">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0369a1" strokeWidth="2.5"
-                           className="mt-0.5 flex-shrink-0">
-                        <polyline points="20 6 9 17 4 12"/>
+                        className="mt-0.5 flex-shrink-0">
+                        <polyline points="20 6 9 17 4 12" />
                       </svg>
                       {h}
                     </li>
@@ -170,13 +170,13 @@ export default function Courses() {
                 </ul>
 
                 <a href="#contact"
-                   onClick={e => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
-                   className={`block w-full text-center py-3.5 rounded-xl font-display font-700 text-sm
+                  onClick={e => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
+                  className={`block w-full text-center py-3.5 rounded-xl font-display font-700 text-sm
                      transition-all duration-200 hover:-translate-y-0.5
                      ${c.featured
-                       ? 'bg-sky-700 text-white hover:bg-sky-600 shadow-[0_4px_16px_rgba(3,105,161,0.25)]'
-                       : 'bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100'
-                     }`}>
+                      ? 'bg-sky-700 text-white hover:bg-sky-600 shadow-[0_4px_16px_rgba(3,105,161,0.25)]'
+                      : 'bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100'
+                    }`}>
                   Enquire &amp; Enroll →
                 </a>
               </div>
@@ -186,7 +186,7 @@ export default function Courses() {
 
         {/* Note */}
         <p ref={el => refs.current[4] = el}
-           className="reveal delay-300 text-center text-sky-900/40 text-sm mt-10 font-mono">
+          className="reveal delay-300 text-center text-sky-900/40 text-sm mt-10 font-mono">
           All courses include hands-on practicals · Certificate awarded on completion
         </p>
       </div>
