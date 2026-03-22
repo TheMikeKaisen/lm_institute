@@ -28,7 +28,17 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center circuit-bg overflow-hidden pt-12 pb-16">
+    <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden pt-12 pb-16">
+      {/* Background Image & Overlay */}
+      <Image 
+        src="/images/gallery/classroom-1.jpeg" 
+        alt="Instructor teaching in classroom" 
+        fill 
+        priority
+        className="object-cover object-center absolute inset-0 -z-20"
+      />
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-md -z-10" />
+
       {/* decorative blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-24 -right-24 w-[480px] h-[480px] rounded-full

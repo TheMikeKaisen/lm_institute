@@ -143,7 +143,7 @@ export default function Courses() {
                 <div className={`font-mono text-xs uppercase tracking-widest mb-2 ${c.featured ? 'text-sky-200/70' : 'text-sky-500'}`}>
                   Duration
                 </div>
-                <h3 className="font-display font-800 text-4xl mb-1">{c.duration}</h3>
+                <h3 className={`font-display font-800 text-4xl mb-1 ${c.duration === '6 Months' ? 'text-white' : ''}`}>{c.duration}</h3>
                 <p className={`font-600 text-base mt-1 ${c.featured ? 'text-sky-100' : 'text-sky-700'}`}>
                   {c.title}
                 </p>
