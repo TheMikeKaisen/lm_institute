@@ -35,7 +35,12 @@ const galleryItems = [
   { id: 3, category: 'Teaching', title: 'Practical Session', desc: 'Students...', tall: false, src: '/images/gallery/practical-session.jpeg' },
   { id: 4, category: 'Equipment', title: 'Soldering Setup', desc: 'Hot air...', tall: false, src: '/images/gallery/soldering-setup.jpeg' },
   { id: 5, category: 'Lab', title: 'Component Workbench', desc: 'Organized...', tall: false, src: '/images/gallery/workbench.jpeg' },
-
+  { id: 6, category: 'Classroom', title: 'Classroom 1', desc: 'Interactive classroom...', tall: false, src: '/images/gallery/classroom-1.jpeg' },
+  { id: 7, category: 'Classroom', title: 'Classroom 2', desc: 'Student workspace...', tall: false, src: '/images/gallery/classroom-2.jpeg' },
+  { id: 8, category: 'Classroom', title: 'Classroom 3', desc: 'Lecture area...', tall: false, src: '/images/gallery/classroom-3.jpeg' },
+  { id: 9, category: 'Classroom', title: 'Classroom 4', desc: 'Learning environment...', tall: false, src: '/images/gallery/classroom-4.jpeg' },
+  { id: 10, category: 'Office', title: 'Office Area', desc: 'Staff and administration...', tall: false, src: '/images/gallery/office-1.jpeg' },
+  { id: 11, category: 'Lab', title: 'Lab Setup', desc: 'General hardware setup...', tall: false, src: '/images/gallery/setup-1.jpeg' },
 ]
 
 const gradients = [
@@ -49,7 +54,7 @@ const gradients = [
   ['from-sky-950', 'to-sky-800'],
 ]
 
-const categories = ['All', 'Lab', 'Equipment', 'Teaching']
+const categories = ['All', 'Lab', 'Equipment', 'Teaching', 'Classroom', 'Office']
 
 export default function Gallery() {
   const [active, setActive] = useState('All')

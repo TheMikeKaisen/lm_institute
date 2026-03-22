@@ -27,7 +27,7 @@ export const metadata = {
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'LM Infotech Institute' }],
   },
   robots: { index: true, follow: true },
-  icons: { icon: '/favicon.ico' },
+  icons: { icon: '/images/logo.jpeg' },
 }
 
 export default function RootLayout({ children }) {
