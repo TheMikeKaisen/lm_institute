@@ -71,7 +71,7 @@ export default function Contact() {
               <span className="text-sky-400">Before It Fills Up</span>
             </h2>
             <p className="text-white/60 text-base leading-relaxed mb-10">
-              This is our very first batch — small in size, high in quality. Fill the form
+              This is our new batch — small in size, high in quality. Fill the form
               and we'll get back to you with course fees, schedule, and seat confirmation.
             </p>
 

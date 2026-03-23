@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 const reasons = [
   { num: '01', title: 'Real Workshop Practicals', desc: 'Every theory session is paired with hands-on practice on actual devices, not dummy models.' },
   { num: '02', title: 'Industry-Grade Equipment', desc: 'Learn on the same microscopes, power supplies and soldering stations used in professional repair labs.' },
-  { num: '03', title: 'Small Batch Size', desc: 'This is our first batch — small by design. Every student gets personal attention from H Kumar himself.' },
+  { num: '03', title: 'Small Batch Size', desc: 'This is our new batch — small by design. Every student gets personal attention from H Kumar himself.' },
   { num: '04', title: 'Job-Ready Skills', desc: 'The curriculum is built around what actual service centers need. You\'ll be employable from day one.' },
   { num: '05', title: 'Certificate on Completion', desc: 'Receive a recognized course completion certificate to validate your skills to employers.' },
   { num: '06', title: 'Backed by a Working Lab', desc: 'We\'re not just a classroom — LM Infotech is a fully active repair center. Real cases, real learning.' },
@@ -29,8 +29,8 @@ const faqs = [
     a: 'We provide job assistance and can connect you with service centers in the network. Placement support is included.',
   },
   {
-    q: 'When does Batch 1 start?',
-    a: 'Batch 1 dates will be confirmed soon. Contact us to register your interest and be notified first.',
+    q: 'When does new Batch start?',
+    a: 'New Batch dates will be confirmed soon. Contact us to register your interest and be notified first.',
   },
 ]
 

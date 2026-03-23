@@ -3,7 +3,7 @@ export default function Strip() {
     '1-Month Foundation', '3-Month Professional', '6-Month Expert',
     'Chip-Level Repair', 'Micro-Soldering', 'Android Flashing',
     'Multimeter & DC Power', 'Schematic Reading', 'FRP Unlocking',
-    'H Kumar · 20+ Years', 'Batch 1 Open', 'Certificate Course',
+    'H Kumar · 30+ Years', 'New Batch Open', 'Certificate Course',
   ]
   return (
     <div className="bg-sky-700 py-3 overflow-hidden" aria-hidden="true">
