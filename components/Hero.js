@@ -51,11 +51,23 @@ export default function Hero() {
 
       <div className="max-w-4xl mx-auto px-6 pt-16 lg:pt-24 pb-12 w-full text-center flex flex-col items-center">
         
-        {/* Batch badge */}
-        <div ref={el => refs.current[0] = el} className="badge mb-8 w-fit mx-auto">
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"/>
-          Admissions Open · New Batch
-        </div>
+        {/* New Batch Alert */}
+        <a href="#contact"
+           onClick={e => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
+           ref={el => refs.current[0] = el} 
+           className="mb-8 relative inline-flex flex-wrap justify-center items-center gap-2 md:gap-3 bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 hover:from-amber-400 hover:via-orange-400 hover:to-red-400 text-white px-5 md:px-6 py-2 md:py-3 rounded-full shadow-xl shadow-orange-500/20 hover:shadow-orange-500/40 hover:shadow-2xl border border-white/20 overflow-hidden group cursor-pointer transition-all duration-300 hover:scale-[1.03]">
+          <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out skew-x-12"></div>
+          <span className="relative flex h-2.5 w-2.5 md:h-3 md:w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 md:h-3 md:w-3 bg-white"></span>
+          </span>
+          <span className="font-display font-semibold text-sm md:text-base tracking-wide z-10">
+            🔥 New Batch Starts: <span className="font-bold underline decoration-white/50 underline-offset-4">15th April 2026</span>
+          </span>
+          <span className="bg-white text-orange-600 text-[10px] md:text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-wider ml-0 md:ml-1 z-10 shadow-md mt-1 md:mt-0 group-hover:bg-amber-50 transition-colors">
+            Admissions Open
+          </span>
+        </a>
 
         <h1 ref={el => refs.current[1] = el}
             className="font-display text-sky-950 text-5xl lg:text-7xl xl:text-[80px]
